@@ -1,0 +1,56 @@
+//area para importar
+@import 'variables';
+@import "funciones";
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.row{
+  &:before{
+    content: "";
+    display: table;
+  }
+  &:after{
+    @extend .row:before;
+    clear:both;
+  }
+}
+[class*="col-"]{
+  min-width: 7px;
+  padding: 12px;
+  float: left;
+}
+//imagenes
+header{
+  div.col-10{
+    text-align: center;
+  }
+  #google{
+    width: 40vh;
+    height: 28vh;
+  }
+  #lupa{
+    width: 4vh;
+    height: 5vh;
+  }
+}
+
+ul{
+  margin-left: 25%;
+
+  li{
+    display: inline-block;
+    margin: 20px
+  }
+}
+#imagen1{
+  max-width: 100%;
+}
