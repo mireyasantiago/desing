@@ -33,13 +33,7 @@ header{
   div.col-10{
     text-align: center;
   }
-  #google{
-    //@include medidas(40vh,28vh);
-    max-width: $imagen-ancho;
-    }
-  #lupa{
-    @include medidas(4vh,5vh);
-  }
+  
 }
 ul{
   margin-left: 25%;
@@ -49,17 +43,13 @@ ul{
     margin: 20px
   }
 }
-#imagen1{
-  max-width: 100%;
-}
+
 #borde{
   border-bottom: solid 4px blue;
   height: 50px;
 }
 
-#gooNew{
-  @include medidas(100%,100%);
-}
+
 
 .margen__lado{
   margin-top: 20px;
@@ -67,8 +57,8 @@ ul{
 }
 
 //imagenes
-#imagenes{
-  img{
-    max-width: $imagen-ancho;
-  }
+
+
+.imagenesDimension{
+  max-width: 100%;
 }
