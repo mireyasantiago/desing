@@ -1,7 +1,7 @@
 //area para importar
 @import 'variables';
 @import "funciones";
-
+@import "mixin";
 
 *{
   box-sizing: border-box;
@@ -34,15 +34,13 @@ header{
     text-align: center;
   }
   #google{
-    width: 40vh;
-    height: 28vh;
-  }
+    //@include medidas(40vh,28vh);
+    max-width: $imagen-ancho;
+    }
   #lupa{
-    width: 4vh;
-    height: 5vh;
+    @include medidas(4vh,5vh);
   }
 }
-
 ul{
   margin-left: 25%;
 
@@ -53,4 +51,24 @@ ul{
 }
 #imagen1{
   max-width: 100%;
+}
+#borde{
+  border-bottom: solid 4px blue;
+  height: 50px;
+}
+
+#gooNew{
+  @include medidas(100%,100%);
+}
+
+.margen__lado{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+//imagenes
+#imagenes{
+  img{
+    max-width: $imagen-ancho;
+  }
 }
