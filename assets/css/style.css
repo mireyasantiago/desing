@@ -34,6 +34,30 @@
 .col-12 {
   width: 100%; }
 
+h3, samp {
+  color: pink; }
+
+p {
+  color: blue; }
+
+small {
+  color: red; }
+
+a {
+  text-decoration: none;
+  text-align: right; }
+
+ul {
+  margin-left: 25%; }
+  ul li {
+    display: inline-block;
+    margin: 20px; }
+
+ol {
+  margin-top: 20px; }
+  ol li {
+    list-style: none; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -57,12 +81,6 @@
 
 header div.col-10 {
   text-align: center; }
-
-ul {
-  margin-left: 25%; }
-  ul li {
-    display: inline-block;
-    margin: 20px; }
 
 #borde {
   border-bottom: solid 4px blue;

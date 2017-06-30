@@ -7,3 +7,38 @@
     width:grid($c);
   }
 }
+
+@for $texto from 1 through 1{
+  h3{
+    color: $color-titulo;
+  }
+  p{
+    color: $color-Texto;
+  }
+  small{
+    color: $color-fecha;
+  }
+  samp{
+    @extend h3 ;
+  }
+  a{
+    text-decoration: none;
+    text-align: right;
+  }
+}
+
+@for $lista from 1 through 1 {
+  ul{
+    margin-left: 25%;
+    li{
+      display: inline-block;
+      margin: 20px
+    }
+  }
+  ol{
+      margin-top: 20px;
+    li{
+      list-style:none;
+    }
+  }
+}
