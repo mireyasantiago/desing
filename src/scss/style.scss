@@ -3,6 +3,9 @@
 @import "funciones";
 @import "mixin";
 
+
+
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -35,23 +38,31 @@ header{
   }
 
 }
+ul{
+  margin-left: 25%;
 
-
-#borde{
-  border-bottom: solid 4px blue;
-  height: 50px;
+  li{
+    display: inline-block;
+    margin: 20px
+  }
 }
 
-
-
-.margen__lado{
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-//imagenes
-
-
-.imagenesDimension{
+img{
   max-width: 100%;
-}//area para importar
+}
+
+section{
+  border-bottom: 2px solid blue;
+  .linea__azul{
+    @extend section ;
+  }
+}
+
+
+header{
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
