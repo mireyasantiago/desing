@@ -8,7 +8,9 @@
   }
 }
 
+
 @for $texto from 1 through 1{
+
   h3{
     color: $color-titulo;
   }
@@ -23,16 +25,17 @@
   }
   a{
     text-decoration: none;
-    text-align: right;
+    //margin-left: 75%;
   }
 }
 
 @for $lista from 1 through 1 {
+
   ul{
-    margin-left: 25%;
+    margin-left: 20%;
     li{
       display: inline-block;
-      margin: 20px
+      margin: 15px
     }
   }
   ol{
